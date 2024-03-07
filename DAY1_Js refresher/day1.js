@@ -488,3 +488,110 @@ switch (inputMonth) {
 }*/
 
 // 2. Write a program which tells the number of days in a month, now consider leap year.
+
+// Exercises: Level 1
+// 1. Create an empty object called dog
+const dog = {};
+
+// 2. Print the the dog object on the console
+console.log(dog);
+
+// 3. Add name, legs, color, age and bark properties for the dog object. The bark property is a method which return woof woof
+
+dog.name = "Bluffy";
+dog.legs = 4;
+dog.age = "2 Months";
+dog.color = "White";
+dog.barkProperty = function () {
+  return "woof woof";
+};
+
+// 4. Get name, legs, color, age and bark value from the dog object
+console.log(dog.name);
+console.log(dog.legs);
+console.log(dog.color);
+console.log(dog.age);
+console.log(dog.barkProperty());
+
+// 5. Set new properties the dog object: breed, getDogInfo
+dog.breed = "PitBull";
+dog.getDogInfo = function () {
+  return `My Dog name is ${this.name}, its has ${this.legs} legs, color ${
+    this.color
+  }. My Dog is ${this.age} months old and it bark ${this.barkProperty()}`;
+};
+
+console.log(dog.getDogInfo());
+
+// Exercises: Level 2
+
+const users = {
+  Alex: {
+    email: "alex@alex.com",
+    skills: ["HTML", "CSS", "JavaScript"],
+    age: 20,
+    isLoggedIn: false,
+    points: 30,
+  },
+  Asab: {
+    email: "asab@asab.com",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Redux",
+      "MongoDB",
+      "Express",
+      "React",
+      "Node",
+    ],
+    age: 25,
+    isLoggedIn: false,
+    points: 50,
+  },
+  Brook: {
+    email: "daniel@daniel.com",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Redux"],
+    age: 30,
+    isLoggedIn: true,
+    points: 50,
+  },
+  Daniel: {
+    email: "daniel@alex.com",
+    skills: ["HTML", "CSS", "JavaScript", "Python"],
+    age: 20,
+    isLoggedIn: false,
+    points: 40,
+  },
+  John: {
+    email: "john@john.com",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Redux", "Node.js"],
+    age: 20,
+    isLoggedIn: true,
+    points: 50,
+  },
+  Thomas: {
+    email: "thomas@thomas.com",
+    skills: ["HTML", "CSS", "JavaScript", "React"],
+    age: 20,
+    isLoggedIn: false,
+    points: 40,
+  },
+  Paul: {
+    email: "paul@paul.com",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "MongoDB",
+      "Express",
+      "React",
+      "Node",
+    ],
+    age: 20,
+    isLoggedIn: false,
+    points: 40,
+  },
+};
+
+// 1. Find the person who has many skills in the users object.
